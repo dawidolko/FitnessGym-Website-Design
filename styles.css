@@ -86,9 +86,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.section__heading:hover {
-    transform: scale(1.2);
-}
 .about-us__textbox {
     max-width: 600px;
     margin: 0 auto;
