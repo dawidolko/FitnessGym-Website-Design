@@ -182,4 +182,11 @@ nav {
     color: #f55;
     text-decoration: underline;
 }
+.section__heading, .about-us__text, .about-us__img {
+    transition: transform 0.3s ease;
+}
+
+.section__heading:hover, .about-us__text:hover, .about-us__img:hover {
+    transform: scale(1.1);
+}
 
