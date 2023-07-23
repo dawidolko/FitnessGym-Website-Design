@@ -5,15 +5,6 @@ body {
     margin: 0;
     padding: 0;
 }
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 50%;
-}
-
 .navbar {
     position: fixed;
     top: 0;
@@ -26,14 +17,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}.logo img {
+    width: 25px;
 }
+
+/* Dodaj animacje przy najechaniu na napisy */
 .nav__item {
     position: relative;
     transition: transform 0.3s ease;
 }
 
 .nav__item:hover {
-    transform: translateY(-3px) scale(1.2);
+    transform: translateY(-3px);
 }
 .header {
     background-image: url('img/header-bg.jpg');
