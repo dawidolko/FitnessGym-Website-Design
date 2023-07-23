@@ -11,13 +11,15 @@ body {
     background-color: #ddd;
      border-radius: 50%;
     padding: 10px;
-    transition: transform .2s;
 }
 
 .icon {
     transition: transform .2s;
 }
 
+.icon:hover {
+    transform: scale(1.2);
+}
 .icon {
     margin: 10px;
 }
@@ -33,7 +35,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: transform .2s;
 }
 .logo img {
     width: 90px;
@@ -93,7 +94,6 @@ nav {
 .nav__item {
     position: relative;
     transition: transform 0.3s ease;
-    transition: transform .2s;
 }
 
 .nav__item:hover {
@@ -108,18 +108,15 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    transition: transform .2s;
 }
 .header__text {
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 1rem;
-    transition: transform .2s;
 }
 .header__text--colorized {
     color: #f55;
     font-weight: bold;
-    transition: transform .2s;
 }
 .header__cta {
     text-decoration: none;
@@ -128,7 +125,6 @@ nav {
     background-color: #f55;
     padding: 1rem 2rem;
     border-radius: 5px;
-    transition: transform .2s;
 }
 .section {
     max-width: 1200px;
@@ -143,12 +139,11 @@ nav {
 }
 
 .section__heading:hover {
-    transition: transform .2s;
+    transform: scale(1.2);
 }
 .about-us__textbox {
     max-width: 600px;
     margin: 0 auto;
-    transition: transform .2s;
 }
 .about-us__text {
     font-size: 1.1rem;
@@ -160,14 +155,11 @@ nav {
     color: #f55;
     text-decoration: underline;
 }
-
 .about-us__box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
-    transform: scale(1.2);
-    transition: transform .2s;
 }
 .about-us__img {
     width: 100%;
@@ -175,14 +167,12 @@ nav {
     height: auto;
     border-radius: 5px;
     margin-bottom: 1rem;
-    transition: transform .2s;
 }
 .footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 2rem;
-    transition: transform .2s;
 }
 .footer__text {
     font-size: 1rem;
