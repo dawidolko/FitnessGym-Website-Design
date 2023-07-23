@@ -5,6 +5,24 @@ body {
     margin: 0;
     padding: 0;
 }
+#tooltip .icon {
+    margin: 0 10px;
+    color: #334;
+    background-color: #ddd;
+     border-radius: 50%;
+    padding: 10px;
+}
+
+.icon {
+    transition: transform .2s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+.icon {
+    margin: 10px;
+}
 .navbar {
     position: fixed;
     top: 0;
