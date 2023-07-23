@@ -11,15 +11,13 @@ body {
     background-color: #ddd;
      border-radius: 50%;
     padding: 10px;
+    transition: transform .2s;
 }
 
 .icon {
     transition: transform .2s;
 }
 
-.icon:hover {
-    transform: scale(1.2);
-}
 .icon {
     margin: 10px;
 }
@@ -35,7 +33,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transform: scale(1.2);
     transition: transform .2s;
 }
 .logo img {
@@ -96,6 +93,7 @@ nav {
 .nav__item {
     position: relative;
     transition: transform 0.3s ease;
+    transition: transform .2s;
 }
 
 .nav__item:hover {
@@ -110,14 +108,12 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    transform: scale(1.2);
     transition: transform .2s;
 }
 .header__text {
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 1rem;
-    transform: scale(1.2);
     transition: transform .2s;
 }
 .header__text--colorized {
@@ -147,13 +143,11 @@ nav {
 }
 
 .section__heading:hover {
-    transform: scale(1.2);
     transition: transform .2s;
 }
 .about-us__textbox {
     max-width: 600px;
     margin: 0 auto;
-    transform: scale(1.2);
     transition: transform .2s;
 }
 .about-us__text {
@@ -188,7 +182,7 @@ nav {
     color: #fff;
     text-align: center;
     padding: 2rem;
-    transform: scale(1.2);
+    transition: transform .2s;
 }
 .footer__text {
     font-size: 1rem;
