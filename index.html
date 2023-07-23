@@ -17,6 +17,9 @@
             background-color: #f5f5f5;
             font-family: 'Victor Mono', monospace;
             line-height: 1.6;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -33,6 +36,9 @@
         }
 
         .icon {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
             transition: transform .2s;
         }
 
@@ -57,7 +63,17 @@
         }
         .logo img {
             width: 90px;
-        }    
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: transform .2s;
+        }
+
+        .logo:hover {
+              transform: scale(1.2);
+        }
         nav {
                 background-color: #222;
                 padding: 10px 0;
