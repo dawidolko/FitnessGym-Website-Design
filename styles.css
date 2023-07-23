@@ -5,17 +5,6 @@ body {
     margin: 0;
     padding: 0;
 }
-.nav__item {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1rem;
-    padding: 0.5rem 1rem;
-}
-.nav__item--active {
-    background-color: #fff;
-    color: #333;
-    border-radius: 5px;
-}
 .header {
     background-image: url('img/header-bg.jpg');
     background-size: cover;
