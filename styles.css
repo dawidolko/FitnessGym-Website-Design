@@ -97,3 +97,11 @@ body {
     color: #f55;
     text-decoration: underline;
 }
+.nav__item {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.nav__item:hover {
+    transform: translateY(-3px);
+}
