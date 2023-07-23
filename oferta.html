@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website - OFERTA</title>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/15493d7b77.js" crossorigin="anonymous"></script>
+    <style>
+        /* Dodaj własne style i animacje */
+        body {
+            font-family: 'Victor Mono', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reszta stylów z sekcji Navbar, Header i Footer */
+        /* ... Wstaw pozostałe style CSS tutaj ... */
+
+        /* Sekcja Oferta */
+        .offer__container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .offer__text {
+            font-size: 2rem;
+            color: #f55;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .offer__text:hover {
+            transform: scale(1.2);
+        }
+
+        .offer__box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .offer__item {
+            flex: 0 0 calc(33.33% - 2rem);
+            margin: 1rem;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .offer__item:hover {
+            transform: translateY(-5px);
+        }
+
+        .offer__icon {
+            font-size: 3rem;
+            color: #f55;
+            margin-bottom: 1rem;
+        }
+
+        .offer__title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .offer__description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar i pozostałe sekcje -->
+
+    <!-- Sekcja Oferta -->
+    <section class="section offer" id="services">
+        <div class="offer__container">
+            <h2 class="section__heading offer__text">Oferta</h2>
+            <div class="offer__box">
+                <div class="offer__item">
+                    <i class="offer__icon fas fa-dumbbell"></i>
+                    <h3 class="offer__title">Trening personalny</h3>
+                    <p class="offer__description">Indywidualnie dostosowane treningi prowadzone przez doświadczonego
+                        trenera.</p>
+                </div>
+                <div class="offer__item">
+                    <i class="offer__icon fas fa-running"></i>
+                    <h3 class="offer__title">Klub fitness</h3>
+                    <p class="offer__description">Bogata oferta zajęć fitness, od aerobiku po joga.</p>
+                </div>
+                <div class="offer__item">
+                    <i class="offer__icon fas fa-drumstick-bite"></i>
+                    <h3 class="offer__title">Dieta i żywienie</h3>
+                    <p class="offer__description">Profesjonalne poradnictwo dietetyczne oraz plany żywieniowe.</p>
+                </div>
+                <div class="offer__item">
+                    <i class="offer__icon fas fa-medkit"></i>
+                    <h3 class="offer__title">Rehabilitacja</h3>
+                    <p class="offer__description">Indywidualne sesje rehabilitacyjne dla osób z kontuzjami.</p>
+                </div>
+                <div class="offer__item">
+                    <i class="offer__icon fas fa-swimmer"></i>
+                    <h3 class="offer__title">Basen</h3>
+                    <p class="offer__description">Basen rekreacyjny z rozmaitymi zajęciami wodnymi.</p>
+                </div>
+                <div class="offer__item">
+                    <i class="offer__icon fas fa-child"></i>
+                    <h3 class="offer__title">Opieka nad dziećmi</h3>
+                    <p class="offer__description">Profesjonalna opieka nad dziećmi podczas treningów.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__icons">
+            <a href="#" class="footer__icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer__icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer__icon"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="footer__text">All rights reserved &copy; 2023 Fitness Website | <a href="#privacy"
+                class="footer__link">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>
