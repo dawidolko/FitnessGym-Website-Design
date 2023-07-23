@@ -1,0 +1,99 @@
+/* Dodaj własne style i animacje */
+body {
+    font-family: 'Sora', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__item {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+}
+.nav__item--active {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+.header {
+    background-image: url('img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header__text {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.header__text--colorized {
+    color: #f55;
+    font-weight: bold;
+}
+.header__cta {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: #f55;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.about-us__textbox {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.about-us__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.about-us__link {
+    color: #f55;
+    text-decoration: underline;
+}
+.about-us__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.about-us__img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+.footer__text {
+    font-size: 1rem;
+    color: #fff;
+}
+.footer__link {
+    color: #f55;
+    text-decoration: underline;
+}
