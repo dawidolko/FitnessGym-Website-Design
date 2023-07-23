@@ -1,4 +1,4 @@
-# beta testy
+# WERSJA BETA
 # Projekt Strony Siłowni Fitness
 Witaj w projekcie Strony Siłowni Fitness! Ten projekt ma na celu stworzenie nowoczesnej i dynamicznej strony internetowej dla siłowni, która zapewni użytkownikom informacje o obiektach siłowni, zajęciach, trenerach oraz opcjach członkostwa. Strona ma przyciągnąć nowych członków oraz zapewnić istniejącym członkom ulepszony interfejs użytkownika.
 
