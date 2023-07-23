@@ -35,6 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transform: scale(1.2);
 }
 .logo img {
     width: 90px;
@@ -108,11 +109,13 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
+    transform: scale(1.2);
 }
 .header__text {
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 1rem;
+    transform: scale(1.2);
 }
 .header__text--colorized {
     color: #f55;
@@ -144,6 +147,7 @@ nav {
 .about-us__textbox {
     max-width: 600px;
     margin: 0 auto;
+    transform: scale(1.2);
 }
 .about-us__text {
     font-size: 1.1rem;
@@ -160,6 +164,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
+    transform: scale(1.2);
 }
 .about-us__img {
     width: 100%;
@@ -173,6 +178,7 @@ nav {
     color: #fff;
     text-align: center;
     padding: 2rem;
+    transform: scale(1.2);
 }
 .footer__text {
     font-size: 1rem;
