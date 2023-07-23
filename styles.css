@@ -5,47 +5,24 @@ body {
     margin: 0;
     padding: 0;
 }
-#tooltip .icon {
-    margin: 0 10px;
-    color: #334;
-    background-color: #ddd;
-     border-radius: 50%;
-    padding: 10px;
-}
-
-.icon {
-    transition: transform .2s;
-}
-
-.icon:hover {
-    transform: scale(1.2);
-}
-.icon {
-    margin: 10px;
-}
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 1rem;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-.logo img {
-    width: 90px;
 }
 .nav__item {
-    position: relative;
-    transition: transform 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
 }
-
-.nav__item:hover {
-    transform: translateY(-3px);
+.nav__item--active {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
 }
 .header {
     background-image: url('img/header-bg.jpg');
@@ -79,13 +56,6 @@ body {
     margin: 0 auto;
     padding: 2rem;
 }
-.section__heading {
-    font-size: 2rem;
-    color: #f55;
-    margin-bottom: 2rem;
-    transition: transform 0.3s ease;
-}
-
 .about-us__textbox {
     max-width: 600px;
     margin: 0 auto;
@@ -127,11 +97,3 @@ body {
     color: #f55;
     text-decoration: underline;
 }
-.section__heading, .about-us__text, .about-us__img {
-    transition: transform 0.3s ease;
-}
-
-.section__heading:hover, .about-us__text:hover, .about-us__img:hover {
-    transform: scale(1.1);
-}
-
