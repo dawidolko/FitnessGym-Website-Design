@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<div class="calculatorbox">
+    <div class="myrank">
+        <div>
+            Your rank
+        </div>
+        <div>
+            <select id="myrank">
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+                <option value="4">Level 4</option>
+                <option value="5">Level 5</option>
+                <option value="6">Level 6</option>
+                <option value="7">Level 7</option>
+                <option value="8">Level 8</option>
+                <option value="9">Level 9</option>
+                <option value="10">Level 10</option>
+            </select>
+        </div>
+    </div>
+    <div class="targetrank">
+        <div>
+            Destination rank
+        </div>
+        <div>
+            <select id="targetrank">
+                <option value="1">Level 1</option>
+                <option value="2">Level 2</option>
+                <option value="3">Level 3</option>
+                <option value="4">Level 4</option>
+                <option value="5">Level 5</option>
+                <option value="6">Level 6</option>
+                <option value="7">Level 7</option>
+                <option value="8">Level 8</option>
+                <option value="9">Level 9</option>
+                <option value="10">Level 10</option>
+            </select>
+        </div>
+    </div>
+    <div class="total">
+        <div class="prefcurrency">
+            <select id="prefcurency">
+                <option value="PLN">PLN</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+        <div id="price">0</div>
+        <div id="error"></div>
+    </div>
+</div>
+
+
+<script>
+    document.getElementById("myrank").addEventListener("click", calculateprice);
+    document.getElementById("targetrank").addEventListener("click", calculateprice);
+    document.getElementById("prefcurency").addEventListener("click", calculateprice);
+
+    function calculateprice() {
+        document.getElementById("error").innerHTML = "";
+        var currency = document.getElementById("prefcurency").value;
+        var rankprices = [
+            [0, 18, 36, 56, 80, 105, 133, 173, 223, 283],
+            [0, 0, 18, 38, 62, 87, 115, 155, 205, 265],
+            [0, 0, 0, 20, 44, 69, 97, 137, 187, 247],
+            [0, 0, 0, 0, 24, 49, 77, 117, 167, 227],
+            [0, 0, 0, 0, 0, 25, 53, 93, 143, 203],
+            [0, 0, 0, 0, 0, 0, 28, 68, 118, 178],
+            [0, 0, 0, 0, 0, 0, 0, 40, 90, 150],
+            [0, 0, 0, 0, 0, 0, 0, 0, 50, 110],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 60],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ];
+        var x, y, price;
+
+        // Get the value of the input field with id="numb"
+        x = parseInt(document.getElementById("myrank").value) - 1;
+        y = parseInt(document.getElementById("targetrank").value) - 1;
+
+        if (x >= y) {
+            document.getElementById("price").innerHTML = "Your rank cant be higher than destination rank!";
+        } else {
+            price = rankprices[x][y];
+            price = parseFloat(curencyconvert(price, currency)).toFixed(2);
+
+            document.getElementById("price").innerHTML = price;
+        }
+    }
+
+    function curencyconvert(priceineuro, currency) {
+        var price, euroTOpln, euroTOusd;
+        euroTOusd = 1.09;
+        euroTOpln = 4.54;
+        if (currency == "PLN") {
+            price = priceineuro * euroTOpln;
+        } else if (currency == "USD") {
+            price = priceineuro * euroTOusd;
+        } else {
+            price = priceineuro;
+        }
+
+        return price;
+    }
+</script>
+</body>
+</html>
