@@ -14,15 +14,12 @@ body {
     justify-content: space-between;
 }
 .nav__item {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1rem;
-    padding: 0.5rem 1rem;
+    position: relative;
+    transition: transform 0.3s ease;
 }
-.nav__item--active {
-    background-color: #fff;
-    color: #333;
-    border-radius: 5px;
+
+.nav__item:hover {
+    transform: translateY(-3px) scale(1.2);
 }
 .header {
     background-image: url('img/header-bg.jpg');
@@ -97,11 +94,4 @@ body {
     color: #f55;
     text-decoration: underline;
 }
-.nav__item {
-    position: relative;
-    transition: transform 0.3s ease;
-}
 
-.nav__item:hover {
-    transform: translateY(-3px);
-}
