@@ -5,13 +5,27 @@ body {
     margin: 0;
     padding: 0;
 }
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50%;
+}
+
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #333;
     color: #fff;
     padding: 1rem;
     text-align: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .nav__item {
     position: relative;
