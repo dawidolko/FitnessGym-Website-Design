@@ -143,7 +143,11 @@
             font-size: 2.5rem;
             color: #fff;
             margin-bottom: 1rem;
+              transition: transform .2s;
         }
+        .header__text:hover {
+              transform: scale(0.8);
+        }    
         .header__text--colorized {
             color: #f55;
             font-weight: bold;
@@ -155,6 +159,10 @@
             background-color: #f55;
             padding: 1rem 2rem;
             border-radius: 5px;
+            transition: transform .2s;
+        }
+        .header__cta:hover {
+              transform: scale(1.2);
         }
         .section {
             max-width: 1200px;
@@ -180,16 +188,28 @@
             line-height: 1.8;
             margin-bottom: 1rem;
             color: #333;
+            transition: transform .2s;
+        }
+        .about-us__test:hover {
+              transform: scale(1.2);
         }
         .about-us__link {
             color: #f55;
             text-decoration: underline;
+            transition: transform .2s;
+        }
+        .about-us__link:hover {
+              transform: scale(1.2);
         }
         .about-us__box {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin-top: 2rem;
+            transition: transform .2s;
+        }
+        .about-us__box:hover {
+              transform: scale(1.2);
         }
         .about-us__img {
             width: 100%;
@@ -257,6 +277,7 @@
                     się znajdujesz. FitnessGym dla entuzjastów sportu - sprawdź instrukcję tutaj</p>
                 <a href="/kontakt" class="about-us__text about-us__link">Dołącz do nas!</a>
             </div>
+    
             <div class="about-us__box">
                 <img src="img/aboutus1.png" alt="Dwoje ludzi robiących pompki patrzących na siebie."
                     class="about-us__img about-us__img--desktop">
