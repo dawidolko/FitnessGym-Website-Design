@@ -36,6 +36,7 @@ body {
     justify-content: space-between;
     align-items: center;
     transform: scale(1.2);
+    transition: transform .2s;
 }
 .logo img {
     width: 90px;
@@ -110,16 +111,19 @@ nav {
     justify-content: center;
     text-align: center;
     transform: scale(1.2);
+    transition: transform .2s;
 }
 .header__text {
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 1rem;
     transform: scale(1.2);
+    transition: transform .2s;
 }
 .header__text--colorized {
     color: #f55;
     font-weight: bold;
+    transition: transform .2s;
 }
 .header__cta {
     text-decoration: none;
@@ -128,6 +132,7 @@ nav {
     background-color: #f55;
     padding: 1rem 2rem;
     border-radius: 5px;
+    transition: transform .2s;
 }
 .section {
     max-width: 1200px;
@@ -143,11 +148,13 @@ nav {
 
 .section__heading:hover {
     transform: scale(1.2);
+    transition: transform .2s;
 }
 .about-us__textbox {
     max-width: 600px;
     margin: 0 auto;
     transform: scale(1.2);
+    transition: transform .2s;
 }
 .about-us__text {
     font-size: 1.1rem;
@@ -159,12 +166,14 @@ nav {
     color: #f55;
     text-decoration: underline;
 }
+
 .about-us__box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2rem;
     transform: scale(1.2);
+    transition: transform .2s;
 }
 .about-us__img {
     width: 100%;
@@ -172,6 +181,7 @@ nav {
     height: auto;
     border-radius: 5px;
     margin-bottom: 1rem;
+    transition: transform .2s;
 }
 .footer {
     background-color: #333;
