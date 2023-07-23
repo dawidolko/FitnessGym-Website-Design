@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.nav{position:fixed;justify-content:center;width:100vw;height:100vh;background-color:#313437;transform:translateX(100%);transition:all .5s;z-index:1}.nav,.nav__items{display:flex;flex-direction:column;align-items:center}.nav__item{font-size:4rem;margin-top:40px;text-decoration:none;color:#bcfd03}.nav__item:hover{color:#788201}.nav__item--active{display:flex;justify-content:center;align-items:center;width:260px;height:65px;margin-top:100px;text-decoration:none;font-size:1.6rem;font-weight:700;color:#141b29;background-color:#bcfd03;border-radius:8px;animation:a 2s .5s both}
 .nav__item {
     color: #fff;
     text-decoration: none;
