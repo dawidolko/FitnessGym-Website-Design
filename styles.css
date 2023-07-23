@@ -5,9 +5,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .logo img {
     width: 90px;
 }
+
 #tooltip .logo {
     margin: 0 10px;
     color: #334;
@@ -23,9 +25,11 @@ body {
 .logo:hover {
     transform: scale(1.2);
 }
+
 .icon {
     margin: 10px;
 }
+
 .navbar {
     position: fixed;
     top: 0;
@@ -94,6 +98,7 @@ nav__item ul li a.active {
     border-bottom-color: #fff;
     transition: transform .2s;
 }
+
 .nav__item {
     position: relative;
     transition: transform 0.3s ease;
@@ -102,6 +107,7 @@ nav__item ul li a.active {
 .nav__item:hover {
     transform: translateY(-3px);
 }
+
 .header {
     background-image: url('img/header-bg.jpg');
     background-size: cover;
@@ -112,15 +118,18 @@ nav__item ul li a.active {
     justify-content: center;
     text-align: center;
 }
+
 .header__text {
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 1rem;
 }
+
 .header__text--colorized {
     color: #f55;
     font-weight: bold;
 }
+
 .header__cta {
     text-decoration: none;
     color: #fff;
@@ -129,11 +138,13 @@ nav__item ul li a.active {
     padding: 1rem 2rem;
     border-radius: 5px;
 }
+
 .section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
+
 .section__heading {
     font-size: 2rem;
     color: #f55;
@@ -144,11 +155,13 @@ nav__item ul li a.active {
 .section__heading:hover {
     transform: scale(1.2);
 }
+
 .about-us__textbox {
     max-width: 600px;
     margin: 0 auto;
     transition: transform .2s;
 }
+
 .about-us__text {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -156,11 +169,13 @@ nav__item ul li a.active {
     color: #333;
     transition: transform .2s;
 }
+
 .about-us__link {
     color: #f55;
     text-decoration: underline;
     transition: transform .2s;
 }
+
 .about-us__box {
     display: flex;
     flex-wrap: wrap;
@@ -168,6 +183,7 @@ nav__item ul li a.active {
     margin-top: 2rem;
     transition: transform .2s;
 }
+
 .about-us__img {
     width: 100%;
     max-width: 400px;
@@ -176,6 +192,7 @@ nav__item ul li a.active {
     margin-bottom: 1rem;
     transition: transform .2s;
 }
+
 .footer {
     background-color: #333;
     color: #fff;
@@ -183,14 +200,15 @@ nav__item ul li a.active {
     padding: 2rem;
     transition: transform .2s;
 }
+
 .footer__text {
     font-size: 1rem;
     color: #fff;
     transition: transform .2s;
 }
+
 .footer__link {
     color: #f55;
     text-decoration: underline;
     transition: transform .2s;
 }
-
