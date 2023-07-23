@@ -35,8 +35,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}.logo img {
-    width: 60px;
+}
+.logo img {
+    width: 90px;
 }
 nav {
             background-color: #222;
