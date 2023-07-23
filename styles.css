@@ -67,6 +67,16 @@ body {
     margin: 0 auto;
     padding: 2rem;
 }
+.section__heading {
+    font-size: 2rem;
+    color: #f55;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.section__heading:hover {
+    transform: scale(1.2);
+}
 .about-us__textbox {
     max-width: 600px;
     margin: 0 auto;
