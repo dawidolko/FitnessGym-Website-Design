@@ -1,34 +1,34 @@
-# Projekt Strony Siłowni Fitness
-Witaj w projekcie Strony Siłowni Fitness! Ten projekt ma na celu stworzenie nowoczesnej i dynamicznej strony internetowej dla siłowni, która zapewni użytkownikom informacje o obiektach siłowni, zajęciach, trenerach oraz opcjach członkostwa. Strona ma przyciągnąć nowych członków oraz zapewnić istniejącym członkom ulepszony interfejs użytkownika.
+# Fitness Gym Website Design
+Welcome to the Fitness Gym Website project! This project aims to create a modern and dynamic gym website that will provide users with information about the gym's facilities, classes, trainers, and membership options. The site is intended to attract new members and provide existing members with an improved user interface.
 
-## Cele projektu:
-Przyjazny dla użytkownika design: Strona będzie miała intuicyjny i przyjazny dla użytkownika design, ułatwiający nawigację i odnalezienie potrzebnych informacji. Layout będzie responsywny, zapewniając spójne doświadczenie na różnych urządzeniach, w tym na komputerach, tabletach i telefonach.
+## Project goals:
+User-friendly design: The website will have an intuitive and user-friendly design, making it easy to navigate and find the information you need. The layout will be responsive, ensuring a consistent experience across devices, including computers, tablets and phones.
 
-Informacje o Członkostwie: Strona będzie prezentować różne plany członkostwa i opcje cenowe. Użytkownicy będą mieli również możliwość rejestracji na członkostwo online, co usprawni proces zapisów.
+Membership Information: The site will present various membership plans and pricing options. Users will also have the option to register for membership online, which will streamline the enrollment process.
 
-Plan Zajęć i Rezerwacje: Dynamiczny plan zajęć zostanie zintegrowany z witryną, prezentując nadchodzące zajęcia i umożliwiając rezerwacje online. Będą także dostępne profile trenerów, aby dostarczyć więcej informacji o każdym instruktorze.
+Class Schedule and Bookings: A dynamic class schedule will be integrated into the website, showcasing upcoming classes and enabling online bookings. Trainer profiles will also be available to provide more information about each instructor.
 
-Profile Trenerów: Strona będzie zawierać profile trenerów siłowni, prezentując ich doświadczenie, kwalifikacje i specjalizację. To pomoże użytkownikom poznać trenerów i zyskać zaufanie do usług siłowni.
+Trainer Profiles: The website will contain profiles of gym trainers, presenting their experience, qualifications and specialization. This will help users get to know the trainers and gain confidence in the gym's services.
 
-Kontakt i Lokalizacja: Użytkownicy znajdą dane kontaktowe, takie jak numery telefonów i adresy e-mail, aby skontaktować się z siłownią w przypadku pytań lub wsparcia. Dodatkowo, strona wyświetli lokalizację siłowni na interaktywnej mapie dla łatwiejszej nawigacji.
+Contact and Location: Users will find contact information such as phone numbers and email addresses to contact the gym for questions or support. Additionally, the website will display the gym's location on an interactive map for easier navigation.
 
-Blog o Zdrowym Stylu Życia: Aby angażować użytkowników i promować zdrowy styl życia, na stronie znajdzie się sekcja bloga z artykułami na temat porad dotyczących fitnessu, rad dotyczących żywienia i planów treningowych.
+Healthy Living Blog: To engage users and promote a healthy lifestyle, the site will feature a blog section with articles on fitness tips, nutrition advice and training plans.
 
-## Technologie i Narzędzia:
-Strona Siłowni Fitness będzie rozwijana z wykorzystaniem następujących technologii i narzędzi:
+## Technologies and Tools:
+The Fitness Gym website will be developed using the following technologies and tools:
 
 Front-End: HTML, CSS, JavaScript, Bootstrap
 Back-End: PHP
-Baza Danych: MySQL lub PostgreSQL
-Kontrola Wersji: Git
-Wdrożenie: GitHub Pages lub serwis hostingowy
+Database: MySQL or PostgreSQL
+Version Control: Git
+Implementation: GitHub Pages or hosting service
 
-## Współpraca w Projekcie:
-Wszelkie zaangażowanie w Projekt Strony Siłowni Fitness jest mile widziane! Jeśli interesujesz się fitness, rozwojem stron internetowych lub designem, możesz dołączyć na różne sposoby:
+## Cooperation in the Project:
+Any involvement in the Fitness Gym Website Project is welcome! If you are interested in fitness, web development or design, there are various ways you can join:
 
-Raportowanie problemów: Jeśli napotkasz jakiekolwiek błędy lub problemy podczas korzystania ze strony, śmiało zgłoś je na GitHubie.
-Sugestie nowych funkcji: Masz pomysł, jak ulepszyć stronę? Podziel się swoimi sugestiami przez zgłoszenia na GitHubie.
-Pull Requesty: Jeśli chciałbyś wnieść poprawki kodu lub dodać nowe funkcje, wyślij pull request do recenzji.
-Wspólnie stwórzmy efektowną i funkcjonalną stronę siłowni, która będzie inspiracją dla ludzi do osiągania swoich celów fitness! Jeśli masz pytania lub potrzebujesz pomocy, prosimy o kontakt przez e-mail lub GitHub.
+Reporting Issues: If you encounter any errors or issues while using the site, please feel free to report them on GitHub.
+Feature Suggestions: Have an idea on how to improve the site? Share your suggestions via GitHub issues.
+Pull Requests: If you would like to make code corrections or add new features, please submit a pull request for review.
+Together, let's create an effective and functional gym website that will inspire people to achieve their fitness goals! If you have questions or need help, please contact us via email or GitHub.
 
-© 2023 Dawid Olko. Wszelkie prawa zastrzeżone.
+© 2023 Dawid Olko. All rights reserved.
