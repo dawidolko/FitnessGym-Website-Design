@@ -1,4 +1,4 @@
-# FitnessGym Website
+# FitnessGym
 
 ## Project Description
 
