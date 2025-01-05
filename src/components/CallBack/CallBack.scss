@@ -1,0 +1,46 @@
+@import "../../global.scss";
+
+.callBack {
+	@include flexCenter(column);
+	gap: 1em;
+	padding: 3em 0.5em;
+	background-color: $main;
+	color: $white;
+	text-align: center;
+
+	&__title {
+		font-size: 4rem;
+	}
+
+	&__icon {
+		font-size: 5rem;
+	}
+
+	&__text {
+		font-size: 3rem;
+	}
+
+	&__btn {
+		margin-top: 1em;
+		padding: 1em 2em;
+		border-radius: 6px;
+		background-color: $dark;
+		color: $white;
+		font-weight: 500;
+		border: none;
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.callBack {
+		&__btn {
+			transition: background-color 0.3s ease, color 0.3s ease;
+
+			&:hover {
+				background-color: #fff;
+				color: #000;
+			}
+		}
+	}
+}

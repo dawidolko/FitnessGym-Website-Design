@@ -1,34 +1,92 @@
-# Fitness Gym Website Design
-Welcome to the Fitness Gym Website project! This project aims to create a modern and dynamic gym website that will provide users with information about the gym's facilities, classes, trainers, and membership options. The site is intended to attract new members and provide existing members with an improved user interface.
+# FitnessGym Website
 
-## Project goals:
-User-friendly design: The website will have an intuitive and user-friendly design, making it easy to navigate and find the information you need. The layout will be responsive, ensuring a consistent experience across devices, including computers, tablets and phones.
+## Project Description
 
-Membership Information: The site will present various membership plans and pricing options. Users will also have the option to register for membership online, which will streamline the enrollment process.
+**FitnessGym Website** is a modern, responsive frontend project built with **React**, **JavaScript**, **CSS**, and **SCSS/SASS** technologies. This website offers users an engaging platform to explore gym facilities, browse fitness programs, and interact with dynamic features such as class schedules, trainer profiles, and a product shop for supplements.
 
-Class Schedule and Bookings: A dynamic class schedule will be integrated into the website, showcasing upcoming classes and enabling online bookings. Trainer profiles will also be available to provide more information about each instructor.
+The site boasts a sleek design, user-friendly navigation, and seamless performance, delivering an enhanced experience for fitness enthusiasts.
 
-Trainer Profiles: The website will contain profiles of gym trainers, presenting their experience, qualifications and specialization. This will help users get to know the trainers and gain confidence in the gym's services.
+## Availability
 
-Contact and Location: Users will find contact information such as phone numbers and email addresses to contact the gym for questions or support. Additionally, the website will display the gym's location on an interactive map for easier navigation.
+The website is available at: [fitnessgym.dawidolko.pl](https://fitnessgym.dawidolko.pl)
 
-Healthy Living Blog: To engage users and promote a healthy lifestyle, the site will feature a blog section with articles on fitness tips, nutrition advice and training plans.
+## Features
 
-## Technologies and Tools:
-The Fitness Gym website will be developed using the following technologies and tools:
+- **Interactive Product Shop**:
 
-Front-End: HTML, CSS, JavaScript, Bootstrap
-Back-End: PHP
-Database: MySQL or PostgreSQL
-Version Control: Git
-Implementation: GitHub Pages or hosting service
+  - Wide range of fitness products, including supplements like proteins, creatine, and pre-workouts.
+  - Each product features a detailed description, price, and image.
+  - Dynamic cart functionality for an intuitive shopping experience.
 
-## Cooperation in the Project:
-Any involvement in the Fitness Gym Website Project is welcome! If you are interested in fitness, web development or design, there are various ways you can join:
+- **Gym Services**:
 
-Reporting Issues: If you encounter any errors or issues while using the site, please feel free to report them on GitHub.
-Feature Suggestions: Have an idea on how to improve the site? Share your suggestions via GitHub issues.
-Pull Requests: If you would like to make code corrections or add new features, please submit a pull request for review.
-Together, let's create an effective and functional gym website that will inspire people to achieve their fitness goals! If you have questions or need help, please contact us via email or GitHub.
+  - Explore gym facilities, available classes, and schedules.
+  - Profiles of trainers showcasing their expertise and qualifications.
 
-© 2023 Dawid Olko. All rights reserved.
+- **Responsive Design**:
+
+  - Optimized for mobile, tablet, and desktop devices for consistent performance.
+
+- **Dynamic Frontend**:
+
+  - Features like category filters, search functionality, and interactive buttons.
+
+- **Aesthetic User Interface**:
+  - Styled with **SCSS/SASS**, offering organized and reusable CSS components.
+
+## Technologies
+
+- **React**: For building a dynamic and interactive user interface.
+- **CSS3 / SCSS / SASS**: For modern and responsive styling.
+- **JavaScript (ES6+)**: For dynamic and client-side functionality.
+- **Git**: For version control and project collaboration.
+
+## Directory Structure
+
+```plaintext
+├── public/           # Public files
+├── src/              # Source code
+│   ├── assets/       # Images and static assets
+│   ├── components/   # React components
+│   ├── pages/        # Page components
+│   ├── styles/       # Global and modular SCSS styles
+│   └── App.js        # Main application entry point
+├── package.json      # Project metadata and dependencies
+└── README.md         # Project documentation
+```
+
+## How to Run the Project Locally?
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/dawidolko/FitnessGym-Website.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd FitnessGym-Website
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm start
+```
+
+5. Open the site in your browser at `http://localhost:3000`.
+
+## Author
+
+The website was created by **Dawid Olko** as part of the **FitnessGym** project.
+
+## License
+
+This project is released under the MIT license. Details are available in the `LICENSE` file.

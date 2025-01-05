@@ -1,0 +1,132 @@
+@import "../../global.scss";
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  z-index: 10;
+  color: $white;
+  transition: background-color 0.3s ease;
+  background-color: #0a0a0a;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 0.5em;
+  }
+
+  &__logo {
+    font-size: 2.5rem;
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__links {
+    @include flexCenter(column);
+    gap: 1em;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    height: 45vh;
+    width: 100%;
+    left: -100%;
+    background-color: #111;
+    transition: 0.3s ease;
+    z-index: 10;
+  }
+
+  &__link,
+  &__cart-link {
+    padding: 0.4em;
+    color: $white;
+  }
+
+  &__link {
+    &.active {
+      color: $main;
+      font-weight: 500;
+    }
+  }
+
+  &__cart-link {
+    &.active {
+      color: unset;
+    }
+  }
+
+  &__cart {
+    position: relative;
+  }
+
+  &__quantity {
+    @include flexCenter(row);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 6px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    background-color: rgb(202, 10, 10);
+  }
+
+  &__basket {
+    font-size: 2.4rem;
+  }
+
+  &__links-active {
+    left: 0;
+  }
+
+  &__hamburger {
+    padding: 0.3em;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    background-color: unset;
+
+    &__bgc {
+      background-color: $darker;
+    }
+
+    &__logo {
+      font-size: 3.2rem;
+    }
+
+    &__links {
+      flex-direction: row;
+      gap: 1em;
+      position: relative;
+      top: 0;
+      left: unset;
+      height: unset;
+      width: unset;
+      background-color: inherit;
+      transform: translateX(0);
+    }
+
+    &__link {
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $main;
+      }
+    }
+
+    &__hamburger {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    &__logo {
+      font-size: 3.5rem;
+    }
+  }
+}

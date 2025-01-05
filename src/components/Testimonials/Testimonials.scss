@@ -1,0 +1,106 @@
+@import "../../global.scss";
+
+.testimonials {
+	background: url("../../assets/testimonials.webp") rgba(0, 0, 0, 0.9);
+	background-blend-mode: darken;
+	background-size: cover;
+	background-position: center;
+
+	&__wrapper {
+		width: 90%;
+		margin: 0 auto;
+		padding: 5em 0 7em;
+	}
+
+	&__title {
+		margin-bottom: 1.5em;
+		text-align: center;
+		font-size: 5rem;
+		font-style: italic;
+		color: $white;
+		font-weight: 500;
+	}
+
+	&__box {
+		height: 350px;
+		width: 100%;
+		padding: 0.8em;
+		margin-bottom: 1em;
+		border-radius: 8px;
+		overflow: hidden;
+		background-color: rgb(235, 233, 233);
+	}
+
+	&__person {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+	}
+
+	&__img {
+		width: 90px;
+		height: 90px;
+		margin: 1em 0 2em;
+		padding: 0.2em;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 2px solid $main;
+	}
+
+	&__info {
+		font-weight: 500;
+	}
+
+	&__name {
+		font-size: 2rem;
+	}
+
+	&__client {
+		color: $main;
+	}
+
+	&__review {
+		font-style: italic;
+		max-width: 400px;
+	}
+}
+
+.slick-slide > div {
+	margin: 0 10px;
+}
+
+.slick-list {
+	margin: 0 -10px;
+}
+
+.slick-dots li button:before {
+	font-size: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+	background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 500px) {
+	.testimonials {
+		&__wrapper {
+			width: 70%;
+		}
+	}
+}
+
+@media (min-width: 796px) {
+	.testimonials {
+		background-attachment: fixed;
+	}
+}
+
+@media (min-width: 1300px) {
+	.testimonials {
+		&__box {
+			height: 300px;
+		}
+	}
+}

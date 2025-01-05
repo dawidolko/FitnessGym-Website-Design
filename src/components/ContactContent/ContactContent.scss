@@ -1,0 +1,164 @@
+@import "../../global.scss";
+
+.contact {
+	padding: 6em 0;
+	background-color: aliceblue;
+
+	&__boxes {
+		@include flexCenter(column);
+		gap: 4em;
+		margin-bottom: 6em;
+	}
+
+	&__box {
+		@include flexCenter(column);
+		gap: 0.5em;
+		width: 250px;
+		height: 250px;
+		padding: 2em;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+		background-color: rgb(255, 255, 255);
+		border-bottom: 4px solid $main;
+	}
+
+	&__link {
+		@include flexCenter(column);
+		color: $dark;
+	}
+
+	&__icon {
+		font-size: 4rem;
+	}
+
+	&__box-title {
+		margin-bottom: 0.2em;
+	}
+
+	&__wrapper {
+		@include flexCenter(column);
+		gap: 2em;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	&__img {
+		width: 500px;
+		max-height: 600px;
+		object-fit: cover;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		height: auto;
+		max-width: 600px;
+		padding: 0 1em 1.5em;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
+
+	&__title {
+		font-size: 3rem;
+		text-transform: capitalize;
+	}
+
+	&__text {
+		color: rgb(26, 26, 26);
+	}
+
+	&__input {
+		width: 100%;
+		padding: 1em;
+		outline: none;
+		border: 1px solid rgb(134, 134, 134);
+	}
+
+	&__error {
+		display: block;
+		height: 0.8em;
+		padding: 0.1em 0;
+		margin-left: 0.1em;
+		font-size: 1.4rem;
+		color: rgb(177, 14, 14);
+
+		&-line {
+			line-height: 0.8;
+		}
+	}
+
+	&__area {
+		width: 100%;
+		padding: 1em;
+		min-height: 130px;
+		max-height: 170px;
+		resize: vertical;
+		outline: none;
+	}
+
+	&__sent {
+		color: rgb(11, 151, 11);
+	}
+
+	&__btn {
+		padding: 0.8em 1.8em;
+		width: fit-content;
+		background-color: $main;
+		color: $white;
+	}
+}
+
+@media (min-width: 500px) {
+	.contact {
+		&__info {
+			padding-bottom: 2em;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.contact {
+		flex-direction: row;
+
+		&__boxes {
+			flex-direction: row;
+		}
+
+		&__box {
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: $main;
+			}
+		}
+
+		&__link {
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: $white;
+			}
+		}
+
+		&__wrapper {
+			flex-direction: row;
+		}
+
+		&__info {
+			height: 650px;
+			padding: 2em;
+		}
+
+		&__btn {
+			transition: background-color 0.3s ease;
+			margin-top: 0.5em;
+
+			&:hover {
+				background-color: $dark;
+			}
+		}
+	}
+}

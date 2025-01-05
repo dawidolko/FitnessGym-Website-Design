@@ -1,0 +1,85 @@
+@import "../../global.scss";
+
+.modal {
+	@include flexCenter(column);
+	gap: 0.5em;
+	position: relative;
+	padding: 3em 4em;
+	background-color: rgb(14, 14, 14);
+
+	&__overlay {
+		@include flexCenter(row);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(17, 17, 17, 0.863);
+		z-index: 99;
+		color: $white;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__text {
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+	&__form {
+		@include flexCenter(column);
+		gap: 1em;
+	}
+
+	&__input {
+		padding: 0.5em;
+		width: 100%;
+	}
+
+	&__error {
+		font-size: 1.4rem;
+		color: rgb(201, 10, 10);
+		line-height: 0;
+	}
+
+	&__success {
+		color: rgb(13, 139, 13);
+	}
+
+	&__btn {
+		margin-top: 1em;
+		padding: 0.8em 2.8em;
+		width: fit-content;
+		background-color: $main;
+		border-radius: 8px;
+		color: $white;
+	}
+
+	&__close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-size: 2rem;
+		color: $white;
+		cursor: pointer;
+	}
+}
+
+@media (min-width: 768px) {
+	.modal {
+		&__form {
+			width: 550px;
+		}
+
+		&__btn {
+			border: 1px solid transparent;
+			transition: border 0.3s, background-color 0.3s;
+
+			&:hover {
+				background-color: #e4e3e117;
+				border: 1px solid white;
+			}
+		}
+	}
+}

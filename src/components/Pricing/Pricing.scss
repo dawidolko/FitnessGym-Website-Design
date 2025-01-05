@@ -1,0 +1,129 @@
+@import "../../global.scss";
+
+.pricing {
+	padding: 4em 0 8em;
+
+	&__title {
+		margin-bottom: 1em;
+		padding: 0.5em;
+		text-align: center;
+		font-size: 4rem;
+		font-style: italic;
+	}
+
+	&__container {
+		@include flexCenter(column);
+		gap: 2em;
+		padding: 0 0.5em;
+	}
+
+	&__box {
+		position: relative;
+		width: 300px;
+		padding: 2em;
+		background-color: #222222;
+		color: $white;
+		overflow: hidden;
+	}
+
+	&__best-offer {
+		position: absolute;
+		background-color: $main;
+		top: 10px;
+		right: -70px;
+		width: 200px;
+		text-align: center;
+		padding: 0.4em;
+		font-size: 1.4rem;
+		transform: rotate(35deg); // Adjust the angle as needed
+		// transform-origin: bottom right; // Set the origin to the bottom right corner
+	}
+
+	&__box-title {
+		margin-bottom: 0.5em;
+		font-weight: 500;
+		font-size: 3rem;
+	}
+
+	&__price {
+		color: $main;
+		font-size: 5rem;
+		font-weight: 600;
+	}
+
+	&__month {
+		color: $white;
+		font-size: 1.4rem;
+		font-weight: normal;
+	}
+
+	&__line {
+		height: 1px;
+		margin: 1em 0;
+		border: none;
+		background-color: rgb(59, 59, 59);
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 0.5em;
+		margin-bottom: 1em;
+		&:last-of-type {
+			margin-bottom: 2em;
+		}
+	}
+
+	&__icon {
+		font-size: 1.8rem;
+		&--close {
+			color: red;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 0.3em;
+		width: fit-content;
+		padding: 0.8em 1.8em;
+		background-color: $main;
+		font-size: 1.4rem;
+		color: $white;
+		font-weight: 600;
+	}
+}
+
+@media (min-width: 768px) {
+	.pricing {
+		&__link {
+			transition: background-color 0.3s ease, color 0.3s ease;
+
+			&:hover {
+				background-color: $white;
+				color: $main;
+			}
+		}
+
+		&__box {
+			width: 350px;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: $dark;
+			}
+		}
+	}
+}
+
+@media (min-width: 996px) {
+	.pricing {
+		&__container {
+			flex-direction: row;
+		}
+
+		&__title {
+			font-size: 6rem;
+		}
+	}
+}

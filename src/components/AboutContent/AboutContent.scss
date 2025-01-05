@@ -1,0 +1,71 @@
+@import "../../global.scss";
+
+.about {
+	padding: 4em 0;
+
+	&__container {
+		@include flexCenter(column);
+		gap: 2em;
+		max-width: 500px;
+		padding: 0 0.5em;
+	}
+
+	&__img {
+		object-fit: cover;
+		height: 400px;
+	}
+
+	&__title {
+		margin-bottom: 0.7em;
+		font-size: 4rem;
+		line-height: 1.2;
+	}
+
+	&__span {
+		color: $main;
+	}
+
+	&__text {
+		margin-bottom: 2em;
+		line-height: 1.8;
+	}
+
+	&__marks {
+		display: flex;
+		gap: 0.3em;
+		margin-bottom: 0.5em;
+		color: #383737;
+	}
+
+	&__mark {
+		color: #000;
+	}
+}
+
+@media (min-width: 1024px) {
+	.about {
+		padding: 6em 0;
+
+		&__container {
+			flex-direction: row;
+			gap: 3em;
+			max-width: unset;
+		}
+
+		&__img {
+			height: 100%;
+		}
+
+		&__img-container {
+			height: 600px;
+		}
+
+		&__content {
+			max-width: 500px;
+		}
+
+		&__title {
+			font-size: 5rem;
+		}
+	}
+}

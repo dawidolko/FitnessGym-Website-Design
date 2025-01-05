@@ -1,0 +1,17 @@
+.notFound {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	background-color: #2e2e2e;
+
+	&__icon {
+		font-size: 20rem;
+	}
+
+	&__error {
+		font-size: 8rem;
+	}
+}

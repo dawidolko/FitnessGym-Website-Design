@@ -1,0 +1,124 @@
+@import "../../global.scss";
+
+.team {
+	padding: 3em 0;
+
+	&__title {
+		font-size: 4rem;
+		text-align: center;
+		font-style: italic;
+	}
+
+	&__body {
+		@include flexCenter(column);
+		gap: 2em;
+		padding: 3.5em 0;
+	}
+
+	&__card {
+		position: relative;
+		height: 450px;
+		width: 100%;
+		max-width: 450px;
+		overflow: hidden;
+	}
+
+	&__img {
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		object-fit: cover;
+		border-radius: 3px;
+		transition: 0.5s;
+	}
+
+	&__text {
+		@include flexCenter(column);
+		position: absolute;
+		height: 70px;
+		width: 100%;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.8);
+	}
+
+	&__name {
+		margin-bottom: 0.2em;
+		font-size: 2rem;
+		font-weight: 500;
+		color: $white;
+	}
+
+	&__icons {
+		display: flex;
+		gap: 0.3em;
+	}
+
+	&__icon {
+		color: $white;
+	}
+}
+
+@media (min-width: 768px) {
+	.team {
+		padding: 5em 0;
+
+		&__title {
+			font-size: 6rem;
+		}
+
+		&__body {
+			display: flex;
+			flex-direction: row;
+		}
+
+		&__card {
+			height: 400px;
+		}
+
+		&__text {
+			padding-top: 1em;
+			transition: 0.5s;
+		}
+
+		&__name {
+			margin-bottom: 0;
+		}
+
+		&__card:hover &__text {
+			height: 100%;
+		}
+
+		&__card:hover &__icons {
+			opacity: 1;
+		}
+
+		&__card:hover &__img {
+			transform: scale(1.1);
+		}
+
+		&__icons {
+			@include flexCenter(row);
+			gap: 0.7em;
+			margin-top: 0.3em;
+			opacity: 0;
+			font-size: 1.8rem;
+			transition: 0.3s;
+		}
+
+		&__icon {
+			transition: color 0.3s ease;
+			&:hover {
+				cursor: pointer;
+				color: $main;
+			}
+		}
+	}
+}
+
+@media (min-width: 996px) {
+	.team {
+		&__card {
+			height: 450px;
+		}
+	}
+}

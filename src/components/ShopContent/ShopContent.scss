@@ -1,0 +1,141 @@
+@import "../../global.scss";
+
+.shop {
+	@include flexCenter(column);
+	padding: 5em 1em;
+
+	&__title {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	&__buttons {
+		@include flexCenter(row);
+		flex-wrap: wrap;
+		gap: 0.5em;
+		margin-bottom: 4em;
+	}
+
+	&__buttons > *,
+	&__btn,
+	&__navigate {
+		padding: 0.5em 1em;
+		border-radius: 12px;
+		background-color: $dark;
+		color: $white;
+	}
+
+	&__navigate {
+		margin-top: 4em;
+		background-color: $main;
+		font-size: inherit;
+	}
+
+	&__products {
+		@include flexCenter(row);
+		flex-wrap: wrap;
+		gap: 3em;
+	}
+
+	&__product {
+		@include flexCenter(column);
+		position: relative;
+		padding: 1.5em;
+		box-shadow: 0 0 9px rgba(0, 0, 0, 0.185);
+	}
+
+	&__label {
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 0.3em 0.6em;
+		background-color: $main;
+		color: $white;
+		font-size: 1.4rem;
+	}
+
+	&__img {
+		max-width: 250px;
+		width: 100%;
+		margin-bottom: 1em;
+		object-fit: cover;
+	}
+
+	&__content {
+		@include flexCenter(column);
+		gap: 0.5em;
+	}
+
+	&__name {
+		text-align: center;
+		font-weight: 500;
+	}
+
+	&__price {
+		font-weight: 500;
+		margin-bottom: 0.5em;
+	}
+
+	&__active {
+		background-color: $main;
+	}
+}
+
+@media (min-width: 600px) {
+	.shop {
+		&__title {
+			font-size: 4rem;
+		}
+
+		&__buttons > *,
+		&__btn,
+		&__navigate {
+			padding: 0.8em 1.6em;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.shop {
+		&__title {
+			font-size: 5rem;
+		}
+
+		&__buttons {
+			gap: 1em;
+		}
+
+		&__buttons > *,
+		&__btn,
+		&__navigate {
+			transition: background-color 0.3s ease;
+		}
+
+		&__buttons > *:hover,
+		&__btn:hover {
+			background-color: $main;
+		}
+
+		&__navigate {
+			&:hover {
+				background-color: $dark;
+			}
+		}
+
+		&__img {
+			height: 250px;
+			transition: transform 0.3s ease;
+		}
+
+		&__product {
+			&:hover .shop__img {
+				transform: scale(1.03);
+			}
+		}
+
+		&__name {
+			font-size: 1.8rem;
+		}
+	}
+}

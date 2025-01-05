@@ -1,0 +1,39 @@
+@import "../../../global.scss";
+
+.article {
+	@include flexCenter(column);
+	padding: 3em 0;
+	background-color: aliceblue;
+
+	&__container {
+		max-width: 800px;
+		padding: 1em 1em 3em;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	&__img {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+	&__title {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		line-height: 1.3;
+	}
+
+	&__text-highlight {
+		margin: 2em 0;
+		padding: 1.5em;
+		color: rgb(54, 54, 54);
+		background-color: rgb(233, 233, 233);
+		font-style: italic;
+		border-left: 4px solid $main;
+	}
+}
+
+@media (min-width: 996px) {
+	.article {
+		padding: 4em 0 6em;
+	}
+}

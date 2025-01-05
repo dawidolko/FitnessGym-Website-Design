@@ -1,0 +1,157 @@
+@import "../../global.scss";
+
+.mainBackground {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+
+	:hover &__arrow {
+		opacity: 1;
+	}
+
+	&__arrow {
+		display: none;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 40px;
+		height: 40px;
+		background-color: #ffffff15;
+		border-radius: 50%;
+		margin: auto;
+		opacity: 0;
+		z-index: 2;
+		cursor: pointer;
+		transition: opacity 0.3s ease;
+	}
+
+	&__arrows {
+		font-size: 20px;
+		color: $white;
+	}
+
+	&__arrow-right {
+		position: absolute;
+		right: 0px;
+	}
+
+	&__container {
+		display: flex;
+		height: 100%;
+	}
+
+	&__slider {
+		width: 100vw;
+		height: 100vh;
+		transition: all 1s ease;
+	}
+
+	&__img {
+		position: relative;
+	}
+
+	&__img::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.7);
+	}
+
+	&__image {
+		width: 100%;
+		height: 100vh;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	&__content {
+		@include flexCenter(column);
+		gap: 1em;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		max-width: 600px;
+		transform: translate(-50%, -50%);
+		color: $white;
+	}
+
+	&__title {
+		font-size: 5rem;
+		padding: 0 0.5em;
+		text-align: center;
+		font-style: italic;
+		margin-bottom: 0.5em;
+	}
+
+	&__text {
+		display: none;
+		margin-bottom: 1.5em;
+		text-align: center;
+	}
+
+	&__link {
+		padding: 0.8em 2.4em;
+		background-color: $main;
+		color: $white;
+		border-radius: 8px;
+		text-transform: uppercase;
+	}
+}
+
+@media (min-width: 768px) {
+	.mainBackground {
+		&__arrow {
+			display: flex;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: $main;
+			}
+		}
+
+		&__title {
+			font-size: 6rem;
+			margin-bottom: unset;
+		}
+
+		&__text {
+			display: block;
+			font-size: 2rem;
+		}
+
+		&__link {
+			border: 1px solid transparent;
+			transition: border 0.3s, background-color 0.3s;
+
+			&:hover {
+				background-color: #e4e3e117;
+				border: 1px solid white;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.mainBackground {
+		&__title {
+			font-size: 9rem;
+		}
+
+		&__content {
+			max-width: 800px;
+		}
+
+		&__text {
+			display: block;
+			font-size: 2.2rem;
+		}
+	}
+}

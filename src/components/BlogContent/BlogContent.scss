@@ -1,0 +1,118 @@
+@import "../../global.scss";
+
+.blog {
+	padding: 3em 0;
+	background-color: aliceblue;
+
+	&__heading {
+		margin-bottom: 1.5em;
+		padding: 0 0.5em;
+		font-size: 4rem;
+		font-style: italic;
+		text-align: center;
+	}
+
+	&__body {
+		display: flex;
+		gap: 3em;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	&__box {
+		height: 100%;
+		max-width: 350px;
+		padding: 1em;
+		overflow: hidden;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	&__overflow {
+		margin-bottom: 0.5em;
+		overflow: hidden;
+	}
+
+	&__img {
+		height: 220px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	&__content {
+		padding: 0 0.5em 1em;
+	}
+
+	&__icons {
+		display: flex;
+		gap: 0.9em;
+		margin-bottom: 0.5em;
+		padding: 1em 0;
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: $dark;
+	}
+
+	&__span {
+		display: flex;
+		align-items: center;
+		gap: 0.3em;
+	}
+
+	&__icon {
+		color: $main;
+	}
+
+	&__line {
+		height: 1px;
+		margin: 0.5em;
+		border: none;
+		background-color: rgb(233, 232, 232);
+	}
+
+	&__title {
+		margin-bottom: 0.5em;
+		font-size: 2rem;
+		color: $dark;
+	}
+
+	&__text {
+		margin-bottom: 2em;
+		color: rgb(85, 85, 85);
+	}
+
+	&__link {
+		padding: 0.8em 1.8em;
+		color: $white;
+		background-color: $main;
+		border-radius: 5px;
+	}
+}
+
+@media (min-width: 768px) {
+	.blog {
+		padding: 5em 0;
+
+		&__heading {
+			margin-bottom: 2em;
+			font-size: 5rem;
+		}
+
+		&__img {
+			transition: transform 0.2s linear;
+		}
+
+		&__box {
+			&:hover .blog__img {
+				transform: scale(1.02);
+			}
+		}
+
+		&__link {
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: $dark;
+			}
+		}
+	}
+}

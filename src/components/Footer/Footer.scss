@@ -1,0 +1,126 @@
+@import "../../global.scss";
+
+.footer {
+  display: flex;
+  padding: 3em 0.5em 1em;
+  color: $white;
+  background-color: $darker;
+
+  &__content {
+    @include flexCenter(column);
+    gap: 3em;
+  }
+
+  &__box,
+  &__links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    max-width: 300px;
+  }
+
+  &__logo {
+    @include flexCenter(row);
+    gap: 0.2em;
+    color: $white;
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  &__title {
+    color: $main;
+    font-size: 2rem;
+  }
+
+  &__link {
+    color: $white;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 0.3em;
+  }
+
+  &__line {
+    height: 2px;
+    margin: 2em 0 1em;
+    border: none;
+    background-color: rgba(56, 56, 56, 0.315);
+  }
+
+  &__date {
+    @include flexCenter(column);
+    gap: 1em;
+    padding: 1em 0.5em;
+    text-align: center;
+  }
+
+  &__logo-name {
+    color: $main;
+    font-weight: 500;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  &__icon-bg {
+    @include flexCenter(row);
+    padding: 5px;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    color: $main;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__content {
+      flex-direction: row;
+      gap: 4em;
+      align-items: start;
+    }
+
+    &__logo {
+      font-size: 3rem;
+    }
+
+    &__box,
+    &__links,
+    &__desc {
+      align-items: start;
+    }
+
+    &__desc {
+      text-align: start;
+    }
+
+    &__link {
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $main;
+      }
+    }
+
+    &__icon-bg {
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: inherit;
+        cursor: pointer;
+      }
+    }
+  }
+}

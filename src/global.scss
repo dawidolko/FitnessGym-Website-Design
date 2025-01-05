@@ -1,0 +1,11 @@
+$main: #369669;
+$white: #fff;
+$dark: #161616;
+$darker: #292525;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,27 @@
+.map {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 55%;
+
+	&__frame {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		border: 0;
+	}
+}
+
+@media (min-width: 796px) {
+	.map {
+		padding-bottom: 40%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.map {
+		padding-bottom: 25%;
+	}
+}
