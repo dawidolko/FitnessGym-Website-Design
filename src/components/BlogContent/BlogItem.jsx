@@ -19,7 +19,7 @@ const BlogItem = (props) => {
         <hr className="blog__line" />
         <h3 className="blog__title">{props.title}</h3>
         <p className="blog__text">{props.text}</p>
-        <Link className="blog__link" to={`/fitnessgym/blog/${props.id}`}>
+        <Link className="blog__link" to={`/blog/${props.id}`}>
           Read More
         </Link>
       </div>

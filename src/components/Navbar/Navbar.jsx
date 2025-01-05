@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className={navBgc ? "navbar navbar__bgc" : "navbar"}>
       <div className="navbar__container container">
-        <Link to="/FitnessGym/" className="navbar__logo">
+        <Link to="/" className="navbar__logo">
           <p className="navbar__logo-text">FitnessGym</p>
         </Link>
         <ul
@@ -42,57 +42,39 @@ const Navbar = () => {
             isOpen ? "navbar__links navbar__links-active" : "navbar__links"
           }>
           <li>
-            <NavLink
-              className="navbar__link"
-              to="/FitnessGym/"
-              onClick={closeNav}>
+            <NavLink className="navbar__link" to="/" onClick={closeNav}>
               HOME
             </NavLink>
           </li>
           <li>
-            <NavLink
-              className="navbar__link"
-              to="/FitnessGym/about"
-              onClick={closeNav}>
+            <NavLink className="navbar__link" to="/about" onClick={closeNav}>
               ABOUT
             </NavLink>
           </li>
           <li>
-            <NavLink
-              className="navbar__link"
-              to="/FitnessGym/shop"
-              onClick={closeNav}>
+            <NavLink className="navbar__link" to="/shop" onClick={closeNav}>
               SHOP
             </NavLink>
           </li>
           <li>
-            <NavLink
-              className="navbar__link"
-              to="/FitnessGym/faq"
-              onClick={closeNav}>
+            <NavLink className="navbar__link" to="/faq" onClick={closeNav}>
               FAQ
             </NavLink>
           </li>
           <li>
-            <NavLink
-              className="navbar__link"
-              to="/FitnessGym/blog"
-              onClick={closeNav}>
+            <NavLink className="navbar__link" to="/blog" onClick={closeNav}>
               BLOG
             </NavLink>
           </li>
           <li>
-            <NavLink
-              className="navbar__link"
-              to="/FitnessGym/contact"
-              onClick={closeNav}>
+            <NavLink className="navbar__link" to="/contact" onClick={closeNav}>
               CONTACT
             </NavLink>
           </li>
           <li>
             <NavLink
               className="navbar__cart-link"
-              to="/FitnessGym/cart"
+              to="/cart"
               onClick={closeNav}>
               <div className="navbar__cart">
                 <span className="navbar__quantity">{totalCartItems()}</span>

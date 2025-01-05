@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="footer__container  container">
         <div className="footer__content">
           <div className="footer__box">
-            <Link to="/FitnessGym/" className="footer__logo">
+            <Link to="/" className="footer__logo">
               <p className="footer__logo-text">FitnessGym</p>
             </Link>
             <div className="footer__desc">
@@ -27,22 +27,22 @@ const Footer = () => {
             <h3 className="footer__title">Useful Links</h3>
             <ul className="footer__links">
               <li>
-                <Link to="/FitnessGym/about" className="footer__link">
+                <Link to="/about" className="footer__link">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/FitnessGym/faq" className="footer__link">
+                <Link to="/faq" className="footer__link">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link to="/FitnessGym/blog" className="footer__link">
+                <Link to="/blog" className="footer__link">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/FitnessGym/contact" className="footer__link">
+                <Link to="/contact" className="footer__link">
                   Contact
                 </Link>
               </li>

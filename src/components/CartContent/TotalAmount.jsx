@@ -27,9 +27,7 @@ const TotalAmount = () => {
       </p>
       <p className="cart__total-amount">Total Items: {totalCartItems()}</p>
       <div className="cart__buttons">
-        <button
-          className="cart__btn"
-          onClick={() => navigate("/FitnessGym/shop")}>
+        <button className="cart__btn" onClick={() => navigate("/shop")}>
           Continue Shopping
         </button>
         <button className="cart__btn" onClick={openModal}>

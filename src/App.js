@@ -20,14 +20,13 @@ function App() {
       <Navbar />
       <Routes location={location}>
         <Route path="/" element={<Home />} />
-        <Route path="/FitnessGym" element={<Home />} />
-        <Route path="/FitnessGym/about" element={<About />} />
-        <Route path="/FitnessGym/shop" element={<Shop />} />
-        <Route path="/FitnessGym/faq" element={<Faq />} />
-        <Route path="/FitnessGym/blog" element={<Blog />} />
-        <Route path="/FitnessGym/blog/:id" element={<BlogId />} />
-        <Route path="/FitnessGym/contact" element={<Contact />} />
-        <Route path="/FitnessGym/cart" element={<Cart />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogId />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
