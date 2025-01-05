@@ -1,7 +1,14 @@
+import blog1 from "../../../assets/blog1.webp";
+import blog2 from "../../../assets/blog2.webp";
+import blog3 from "../../../assets/blog3.webp";
+import blog4 from "../../../assets/blog4.webp";
+import blog5 from "../../../assets/blog5.webp";
+import blog6 from "../../../assets/blog6.webp";
+
 const articleData = [
   {
     id: 1,
-    img: "https://fitnessgym.dawidolko.pl/static/media/blog1.jpg",
+    img: blog1,
     alt: "Man performing strength training at the gym",
     title: "MAXIMIZE YOUR GYM TIME EFFECTIVELY",
     text: "Making the most of your gym time is essential to achieving your fitness goals. Plan your sessions carefully, set clear objectives, and focus on exercises that align with your targets, whether it's building strength or improving endurance. Incorporate a proper warm-up and cooldown to avoid injuries and boost recovery. Stay consistent, eat a balanced diet, and prioritize rest for optimal results. Fitness success is built on daily effort and dedication.",
@@ -12,7 +19,7 @@ const articleData = [
   },
   {
     id: 2,
-    img: "https://fitnessgym.dawidolko.pl/static/media/blog2.jpg",
+    img: blog2,
     alt: "Woman focused during a workout",
     title: "ALL YOU NEED TO KNOW ABOUT FITNESS",
     text: "Understanding the fundamentals of fitness is the first step toward a healthier lifestyle. From workout routines to nutrition and wellness trends, this guide provides you with the knowledge needed to make informed decisions. Equip yourself with the tools to succeed and create a fitness journey that's tailored to your needs.",
@@ -23,7 +30,7 @@ const articleData = [
   },
   {
     id: 3,
-    img: "https://fitnessgym.dawidolko.pl/static/media/blog3.jpg",
+    img: blog3,
     alt: "Woman lifting weights",
     title: "FITNESS: A PATH TO A SHARPER MIND",
     text: "Regular physical activity does wonders for your mental and emotional well-being. It reduces stress, enhances mood, and boosts cognitive functions. Discover how making fitness a part of your lifestyle can transform not just your body, but also your mind.",
@@ -33,7 +40,7 @@ const articleData = [
   },
   {
     id: 4,
-    img: "https://fitnessgym.dawidolko.pl/static/media/blog4.jpg",
+    img: blog4,
     alt: "Man starting his fitness journey",
     title: "START YOUR FITNESS JOURNEY TODAY",
     text: "There’s no better time than today to take the first step toward a healthier you. Procrastination holds you back from reaping the benefits of fitness. Start small, stay consistent, and watch as your life transforms.",
@@ -44,7 +51,7 @@ const articleData = [
   },
   {
     id: 5,
-    img: "https://fitnessgym.dawidolko.pl/static/media/blog5.jpg",
+    img: blog5,
     alt: "Woman performing bodyweight exercises",
     title: "PERSONAL TRAINING: WHERE TO BEGIN",
     text: "Starting your personal fitness journey can be daunting, but this guide simplifies the process. Learn how to set realistic goals, create effective workout plans, and build a foundation for long-term success.",
@@ -55,7 +62,7 @@ const articleData = [
   },
   {
     id: 6,
-    img: "https://fitnessgym.dawidolko.pl/static/media/blog6.jpg",
+    img: blog6,
     alt: "Man training like a pro athlete",
     title: "TRAIN LIKE A CHAMPION",
     text: "Discover the rigorous training, disciplined nutrition, and mental focus that define champions. Adopting these habits can elevate your fitness routine and help you achieve peak performance.",
