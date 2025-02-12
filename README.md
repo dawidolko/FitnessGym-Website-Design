@@ -41,7 +41,7 @@ The website is available at: [fitnessgym.dawidolko.pl](https://fitnessgym.dawido
 - **JavaScript (ES6+)**: For dynamic and client-side functionality.
 - **Git**: For version control and project collaboration.
 
-## Directory Structure
+## Directory Structure Project
 
 ```plaintext
 ├── public/           # Public files
